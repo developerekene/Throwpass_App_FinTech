@@ -43,6 +43,7 @@ const Home = (props: Props) => {
   const NavigateToBookFlight = ()=> props.navigation.navigate("BookFlight")
   const NavigateToTransportPays = ()=> props.navigation.navigate("TransportPays")
   const NavigateToSendMoney = ()=> props.navigation.navigate("SendMoney")
+  const NavigateToGetTransportCard = () => props.navigation.navigate('getTransportCard')
   
 
    
@@ -105,7 +106,7 @@ const Home = (props: Props) => {
 
           </View>
           <View style={styles.layers1}>
-            <CardStack  imag={<MoneyCard/>}title='Get Transport Card' />
+            <CardStack  imag={<MoneyCard/>}title='Get Transport Card' onPress={NavigateToGetTransportCard}/>
             <CardStack imag={<BusIcon/>} title='Book a Bus'onPress={ NavigateToBookFlight} />
             <CardStack imag={<SendMail/>} title='Send Money' onPress={NavigateToSendMoney} />
 
