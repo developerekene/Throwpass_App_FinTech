@@ -157,7 +157,7 @@ const HomeBottomNavigation : React.FC<BottomTabNavigatorProps> = ({
   // )
 
   return(
-    <NavigationContainer>
+    // <NavigationContainer>
     <Tab.Navigator
     initialRouteName="Home"
     screenOptions={({ route })=>({
@@ -202,7 +202,7 @@ const HomeBottomNavigation : React.FC<BottomTabNavigatorProps> = ({
       <Tab.Screen name="Bills" component={Bills}/> 
       <Tab.Screen name="Profile" component={ProfileScreen}/> 
   </Tab.Navigator>
-  </NavigationContainer>
+  // </NavigationContainer>
 )
 }
 
